@@ -1,9 +1,13 @@
 let wid = window.screen.availWidth;
+let link = document.querySelectorAll("a");
 let menu = document.getElementById("links");
 let nav = document.querySelector("nav");
 function Menu(){
     if(wid<=900){
-        console.log(wid);
+//ATRIBUIÇÃO DA COR BRANCA AOS LINKS EM TELAS MENORES
+        for (let i = 0;i<5;i++){
+            link[i].style.color="#fff";
+        }
 //ESTILIZAÇÃO DO MENU DESLIZANTE
         menu.style.position="absolute";
         menu.style.top="100px";
@@ -29,7 +33,6 @@ function Menu(){
 //FUNÇÃO ABRE E FECHA MENU
 function btnMenu(){
     let buttonType = document.querySelectorAll("nav img")[1].id;
-    console.log(buttonType);
     if(buttonType=="open"){
         menu.style.width="50%";
         menu.style.right="50%";

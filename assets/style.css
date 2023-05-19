@@ -52,6 +52,7 @@ section img{
 }
 section article{
     display:flex;
+    margin-top:2em;
     gap:1em;
 
 }
@@ -156,9 +157,9 @@ aside hr{
     #container{
         width:95vw;
     }
-    #links a{
+    /* #links a{
         color:#fff;
-    }
+    } */
     main, main section, section article,main aside, footer{
         width:100%;
     }
