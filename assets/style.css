@@ -145,16 +145,14 @@ aside hr{
 }
 
 /******************* LAYOUT DISPOSITIVOS MÓVEIS */
-@media screen and (max-width:500px){
+@media screen and (max-width:580px){
     body{
         overflow-x:hidden;
     }
     #container{
         width:95vw;
+        overflow-x:hidden;
     }
-    /* #links a{
-        color:#fff;
-    } */
     main, main section, section article,main aside, footer{
         width:100%;
     }

@@ -8,7 +8,7 @@ function Menu(){
 //CRIAÇÃO E APADRINHAMENTO DA IMG MENU HAMBURGUER
 let wid = window.innerWidth;
 console.log(wid);
-        if(wid<=500 && createHamburguer == false){
+        if(wid<=580 && createHamburguer == false){
             let imgMenu = document.createElement("img");
             imgMenu.src="assets/images/icon-menu.svg";
             nav.appendChild(imgMenu);
@@ -19,8 +19,9 @@ console.log(wid);
             btn.addEventListener("click", btnMenu);
             createHamburguer=true;
         }
-        else if(wid>500 && createHamburguer==true){
-            document.querySelectorAll("nav img")[1].remove();
+        else if( wid>580 && createHamburguer==true && (document.querySelectorAll("nav img")[1]!= undefined) ){
+            document.querySelectorAll("nav img")[1].remove()
+            createHamburguer=false;
         }
 }
 //FUNÇÃO ABRE E FECHA MENU
